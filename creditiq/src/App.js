@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "https://credit-risk-api.onrender.com";
+const API_URL = "http://localhost:8000";
 
 const INR = (val) => {
   if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
@@ -216,7 +216,7 @@ function Tabs({ tabs, active, onSelect }) {
     <div style={{ display: "flex", gap: 4, marginBottom: 20, background: "rgba(255,255,255,0.03)", padding: 4, borderRadius: 8 }}>
       {tabs.map(t => (
         <button key={t} onClick={() => onSelect(t)} style={{
-          flex: 1, padding: "8px 12px", border: "none", borderRadius: 6, cursor: "pointer",
+          flex: 1, padding: "8px 12px", borderRadius: 6, cursor: "pointer",
           fontSize: 10, fontFamily: "monospace", fontWeight: 700, letterSpacing: "0.08em",
           background: active === t ? "rgba(212,160,23,0.15)" : "transparent",
           color: active === t ? "#d4a017" : "rgba(255,255,255,0.35)",
@@ -328,15 +328,15 @@ export default function App() {
               boxShadow: "0 0 25px rgba(212,160,23,0.4)" }}>₹</div>
             <div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
-                <span style={{ fontSize: 20, fontWeight: 900, letterSpacing: "0.08em",
+                <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: "0.08em",
                   background: "linear-gradient(to right, #d4a017, #FF9933, #ffd166)",
                   WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-                  fontFamily: "'Courier New', monospace" }}>CREDIT</span>
-                <span style={{ fontSize: 20, fontWeight: 900, color: "rgba(255,255,255,0.9)",
-                  fontFamily: "'Courier New', monospace" }}>RISK IQ</span>
+                  fontFamily: "'Courier New', monospace" }}>AI-POWERED</span>
+                <span style={{ fontSize: 18, fontWeight: 900, color: "rgba(255,255,255,0.9)",
+                  fontFamily: "'Courier New', monospace" }}>LOAN DECISION ENGINE</span>
               </div>
               <div style={{ fontSize: 9, color: "rgba(255,255,255,0.28)", letterSpacing: "0.22em", fontFamily: "monospace" }}>
-                EXPLAINABLE AI  ·  LOAN DECISION ENGINE  ·  INDIA
+                EXPLAINABLE AI  ·  XAI  ·  SHAP  ·  LIME  ·  INDIA
               </div>
             </div>
           </div>
@@ -641,7 +641,7 @@ export default function App() {
         textAlign: "center", position: "relative", zIndex: 1 }}>
         <div style={{ height: 1, background: "linear-gradient(to right, transparent, rgba(212,160,23,0.25), transparent)", marginBottom: 12 }} />
         <div style={{ fontSize: 9, color: "rgba(255,255,255,0.13)", fontFamily: "monospace", letterSpacing: "0.12em" }}>
-          CREDIT RISK IQ  ·  AI-ASSISTED DECISIONS  ·  FINAL APPROVAL SUBJECT TO HUMAN REVIEW  ·  RBI GUIDELINES COMPLIANT
+          AI-POWERED LOAN DECISION ENGINE WITH XAI  ·  AI-ASSISTED DECISIONS  ·  FINAL APPROVAL SUBJECT TO HUMAN REVIEW  ·  RBI GUIDELINES COMPLIANT
         </div>
       </div>
     </div>

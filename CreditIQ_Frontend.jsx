@@ -216,7 +216,7 @@ function Tabs({ tabs, active, onSelect }) {
     <div style={{ display: "flex", gap: 4, marginBottom: 20, background: "rgba(255,255,255,0.03)", padding: 4, borderRadius: 8 }}>
       {tabs.map(t => (
         <button key={t} onClick={() => onSelect(t)} style={{
-          flex: 1, padding: "8px 12px", border: "none", borderRadius: 6, cursor: "pointer",
+          flex: 1, padding: "8px 12px", borderRadius: 6, cursor: "pointer",
           fontSize: 10, fontFamily: "monospace", fontWeight: 700, letterSpacing: "0.08em",
           background: active === t ? "rgba(212,160,23,0.15)" : "transparent",
           color: active === t ? "#d4a017" : "rgba(255,255,255,0.35)",
