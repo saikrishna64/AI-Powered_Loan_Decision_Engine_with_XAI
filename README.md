@@ -1,4 +1,4 @@
-# Credit Risk IQ — Explainable AI Loan Decision Engine
+# AI-Powered Loan Decision Engine with XAI
 
 > Full-stack credit risk scoring system for Indian lending — powered by XGBoost, SHAP, LIME, and Rule-based explanations. Every decision comes with a reason.
 
